@@ -91,6 +91,46 @@
 // console.log(pairs);
 
 // ----------------------------
+// // # forEach vs map
+// const arr = [10, 20, 30];
+
+// // # using forEach
+// const newArray = [];
+
+// arr.forEach((a)=>{
+//     newArray.push(a*2);
+// });
+
+// console.log(newArray);
+
+// ----------------------------
+
+// # REDUCE IN JS : https://docs.google.com/spreadsheets/d/1UMcxGl4NLcxAL8QvTKqDPLdD_I2zOK9OCMVO3Sk1GjU/edit?usp=sharing
+// const arr = [10, 20, 30];
+
+// # with default value
+// arr.reduce((acc, elem, idx, c)=>{
+//     console.log(acc, elem, idx, c);
+//     return acc;
+// }, 0);
+
+// # without default value
+// arr.reduce((acc, elem, idx, c)=>{
+//     console.log(acc, elem, idx, c);
+//     return acc;
+// });
+
+// # use cases : 1 : sum;
+// const ans = arr.reduce((acc, elem)=>{
+//     return acc+elem;
+// }, 0);
+// console.log(ans);
+
+// # use cases : 2 : mul;
+// const ans = arr.reduce((acc, elem)=>{
+//     return acc*elem;
+// });
+// console.log(ans);
 
 const getMetaData = () => {
     const name = prompt("Please enter you name");
