@@ -52,3 +52,5 @@ Object.entries(mappings).forEach((elem) => {
     `;
     newElement.appendChild(newChildDiv);
 });
+
+console.dir(document.body);
