@@ -24,9 +24,13 @@ const data = [
 const root = document.getElementById("root");
 const selectElement = document.getElementsByTagName("select")[0];
 
-const cities = data.map((elem) => elem.city);
-
 const showOptions = () => {
+    selectElement.innerHTML = "";
+
+    const citiesObj = {};
+    data.forEach((elem) => (citiesObj[elem.city] = true));
+    const cities = Object.keys(citiesObj);
+
     cities.forEach((city) => {
         const newOption = document.createElement("option");
         newOption.value = city;
@@ -36,6 +40,8 @@ const showOptions = () => {
 };
 
 const showCards = (newData) => {
+    showOptions();
+
     root.innerHTML = "";
     newData.forEach((elem, idx) => {
         const card = document.createElement("div");
