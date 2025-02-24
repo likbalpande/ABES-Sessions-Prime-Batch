@@ -5,6 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #card {
+            max-width: 300px;
+            border: 1px solid brown;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        img {
+            width: 250px;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,7 +28,7 @@
         <input id="search-text" type="text" name="github-profile" onChange="getData(event)">
     </header>
     <h1>Async Callbacks</h1>
-    <div id="card"></div>
+    <div id="cards"></div>
     <script src="./async_callbacks.js"></script>
 </body>
 
