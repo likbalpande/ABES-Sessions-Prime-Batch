@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 6.25rem auto;
+    grid-template-columns: 13rem 1fr;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: yellow;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+aside {
+    background-color: aquamarine;
+}
+
+main {
+    background-color: blueviolet;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-auto-rows: auto;
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.card {
+    /* height: 200px; */
+    background-color: orange;
+}
