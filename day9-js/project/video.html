@@ -8,13 +8,29 @@
 </head>
 
 <body>
+    <a href='./index.html'>HOME</a>
     <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     <script>
         const iframe = document.querySelector('iframe')
-        const [a, videoId] = window.location.search.split('=');
+        const searchText = window.location.search;
+        const splitText = searchText.split('=');
+        const videoId = splitText[1];
         iframe.src = `https://www.youtube.com/embed/${videoId}`
+
+        const youtubeHistory = localStorage.getItem('yt_history');
+        if (!youtubeHistory) {
+            const newHistory = [];
+            newHistory.push(videoId);
+            localStorage.setItem("yt_history", JSON.stringify(newHistory));
+        }
+        else {
+            const newHistory = JSON.parse(youtubeHistory);
+            newHistory.push(videoId);
+            localStorage.setItem("yt_history", JSON.stringify(newHistory));
+        }
     </script>
 </body>
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="./index.html">HOME</a>
+    <div id="iframe-container"></div>
+
+    <script>
+        const historyText = localStorage.getItem("yt_history")
+        const historyArray = JSON.parse(historyText).reverse();
+
+        const root = document.getElementById('iframe-container');
+        historyArray.forEach((videoId) => {
+            const newCard = document.createElement('div');
+            newCard.innerHTML = `
+                <iframe 
+                    width="448" 
+                    height="252" 
+                    src="https://www.youtube.com/embed/${videoId}" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen >
+                </iframe>
+            `;
+            root.appendChild(newCard)
+        })
+    </script>
+</body>
+
+</html>
