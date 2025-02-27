@@ -5892,4 +5892,8 @@ const handleHover = (e, idx) => {
     // e.target.src = lastImage.url;
 };
 
+const handleSearch = (e) => {
+    window.open(`./search.html?text=${e.target.value}`, "_self");
+};
+
 showUI(dummyData);
