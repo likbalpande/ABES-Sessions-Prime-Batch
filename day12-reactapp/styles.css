@@ -1,0 +1,14 @@
+.card {
+    margin: 1rem auto;
+    max-width: 400px;
+    background-color: yellow;
+    padding: 1rem;
+}
+
+.submit {
+    background-color: lime;
+}
+
+.danger {
+    background-color: red;
+}

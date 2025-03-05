@@ -1,0 +1,40 @@
+--> npm init
+--> npm i react
+--> npm i react-dom
+--> create index.html
+--> boilerplate code --> div#parent & src tag
+--> create app.js
+--> import react & react-dom
+    `
+        CommonJS Format (mostly used in old node/express apps)
+            module.exports = temp;
+            const temp = require("././")
+        ES Modules (all modern apps)
+            export temp;
+            import temp from "././";
+
+        import React from 'react';
+        import ReactDOM from 'react-dom/client';
+    `
+
+--> basic react, render app component
+
+--> in script tag, write type='module'
+--> in package.json, write "type":"module",
+
+--> install a bundler (ex. vite, parcel)
+: npm i parcel
+
+--> run the app
+: npx parcel index.html
+
+------------------------------------------
+
+default export -->
+const Card = () => {...}
+export default Card;
+
+default import -->
+import Card from "./components/card.js"
+
+:: in (default) --> name doesn't matter
