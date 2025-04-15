@@ -1,4 +1,5 @@
 const fsPromises = require("fs/promises");
+const { ulid } = require("ulid");
 
 const saveObjInFile = async (obj) => {
     try {
@@ -10,12 +11,14 @@ const saveObjInFile = async (obj) => {
             if (name === obj.name && price === obj.price) return true;
         });
         if (idx == -1) {
+            obj.id = ulid();
             oldDataArr.push(obj);
+            // oldDataArr.push({...obj, id:ulid()});
         } else {
             oldDataArr[idx].stock = Number(oldDataArr[idx].stock) + Number(obj.stock);
         }
 
-        await fsPromises.writeFile("./data.json", JSON.stringify(oldDataArr));
+        await fsPromises.writeFile("./data.json", JSON.stringify(oldDataArr, 2));
     } catch (err) {
         console.log("File handling error:", err.message);
     }
