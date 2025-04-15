@@ -31,7 +31,7 @@ const server = http.createServer(async (req, res) => {
     });
 
     const products = await getData();
-    const productsHTMLCode = getProductsHtmlCode(products);
+    const productsHTMLCode = getProductsHtmlCode(products.slice);
     const newPage = page.replace("__PRODUCTS__", productsHTMLCode);
     res.end(newPage);
 });
