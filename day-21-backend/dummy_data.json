@@ -1,0 +1,202 @@
+[
+    {
+        "title": "Boat Rockerz 255 Pro+ Wireless Earphones",
+        "price": 1499,
+        "stock": 25,
+        "tags": [
+            "electronics",
+            "audio",
+            "wireless"
+        ]
+    },
+    {
+        "title": "Prestige Non-Stick Fry Pan 24cm",
+        "price": 899,
+        "stock": 15,
+        "tags": [
+            "kitchen",
+            "cookware",
+            "non-stick"
+        ]
+    },
+    {
+        "title": "Wildcraft 44L Backpack",
+        "price": 1999,
+        "stock": 10,
+        "tags": [
+            "bags",
+            "travel",
+            "backpack"
+        ]
+    },
+    {
+        "title": "Samsung 256GB microSD Card",
+        "price": 1499,
+        "stock": 50,
+        "tags": [
+            "storage",
+            "electronics",
+            "memory"
+        ]
+    },
+    {
+        "title": "Philips LED Bulb 9W Pack of 4",
+        "price": 399,
+        "stock": 40,
+        "tags": [
+            "home",
+            "lighting",
+            "led"
+        ]
+    },
+    {
+        "title": "Fastrack Reflex 3.0 Smart Band",
+        "price": 1995,
+        "stock": 20,
+        "tags": [
+            "fitness",
+            "wearable",
+            "fastrack"
+        ]
+    },
+    {
+        "title": "Tupperware Water Bottle 1L Set of 4",
+        "price": 1099,
+        "stock": 30,
+        "tags": [
+            "kitchen",
+            "bottle",
+            "plastic"
+        ]
+    },
+    {
+        "title": "Mi 10000mAh Power Bank 3i",
+        "price": 1099,
+        "stock": 35,
+        "tags": [
+            "power",
+            "battery",
+            "electronics"
+        ]
+    },
+    {
+        "title": "Nivea Men Face Wash 150ml",
+        "price": 249,
+        "stock": 100,
+        "tags": [
+            "grooming",
+            "skincare",
+            "men"
+        ]
+    },
+    {
+        "title": "Haldiram's Soan Papdi 500g",
+        "price": 155,
+        "stock": 200,
+        "tags": [
+            "sweets",
+            "food",
+            "diwali"
+        ]
+    },
+    {
+        "title": "HP Wireless Mouse X200",
+        "price": 699,
+        "stock": 60,
+        "tags": [
+            "electronics",
+            "accessories",
+            "mouse"
+        ]
+    },
+    {
+        "title": "Campus Men's Running Shoes",
+        "price": 1299,
+        "stock": 18,
+        "tags": [
+            "footwear",
+            "men",
+            "sports"
+        ]
+    },
+    {
+        "title": "Lifebuoy Total 10 Soap 100g Pack of 4",
+        "price": 115,
+        "stock": 80,
+        "tags": [
+            "soap",
+            "personal care",
+            "hygiene"
+        ]
+    },
+    {
+        "title": "Colgate MaxFresh Toothpaste 150g",
+        "price": 99,
+        "stock": 90,
+        "tags": [
+            "toothpaste",
+            "oral care",
+            "daily use"
+        ]
+    },
+    {
+        "title": "Zebronics Zeb-Rover Wireless Keyboard & Mouse Combo",
+        "price": 1199,
+        "stock": 22,
+        "tags": [
+            "electronics",
+            "keyboard",
+            "combo"
+        ]
+    },
+    {
+        "title": "Pigeon Stove Top Pressure Cooker 3L",
+        "price": 1299,
+        "stock": 14,
+        "tags": [
+            "kitchen",
+            "cooker",
+            "pressure"
+        ]
+    },
+    {
+        "title": "Tata Tea Gold 1kg",
+        "price": 480,
+        "stock": 120,
+        "tags": [
+            "beverage",
+            "tea",
+            "tata"
+        ]
+    },
+    {
+        "title": "Classmate A4 Notebook - 200 Pages",
+        "price": 75,
+        "stock": 300,
+        "tags": [
+            "stationery",
+            "notebook",
+            "school"
+        ]
+    },
+    {
+        "title": "Godrej Aer Twist Car Freshener",
+        "price": 299,
+        "stock": 70,
+        "tags": [
+            "car",
+            "freshener",
+            "aer"
+        ]
+    },
+    {
+        "title": "Bajaj Majesty KTX 1.7L Electric Kettle",
+        "price": 1299,
+        "stock": 12,
+        "tags": [
+            "appliance",
+            "kitchen",
+            "electric"
+        ]
+    }
+]

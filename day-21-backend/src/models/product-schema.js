@@ -13,6 +13,9 @@ const productSchema = new mongoose.Schema({
         default: 1,
         min: 0,
     },
+    tags: {
+        type: [String],
+    },
 });
 
 const ProductModel = mongoose.model("product", productSchema);

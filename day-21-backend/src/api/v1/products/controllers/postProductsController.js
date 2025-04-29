@@ -2,6 +2,7 @@ const { ProductModel } = require("../../../../models/product-schema");
 
 const createProductController = async (req, res) => {
     try {
+        console.log("Processing create product request!");
         const obj = req.body;
         const newProduct = await ProductModel.create(obj);
 
