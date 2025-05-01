@@ -18,6 +18,12 @@ const getProductsController = async (req, res) => {
 
     const productsList = await mongooseQuery;
 
+    await new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve();
+        }, 5000);
+    });
+
     res.send({
         status: "success",
         data: {
