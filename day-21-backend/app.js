@@ -4,9 +4,12 @@ require("./src/config/db.js");
 const express = require("express");
 const morgan = require("morgan");
 const { productRouter } = require("./src/api/v1/products/routes/product-routes.js");
+const cors = require("cors");
 const PORT = 2200;
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 
