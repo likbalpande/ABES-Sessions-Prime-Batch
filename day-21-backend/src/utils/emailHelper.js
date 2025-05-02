@@ -45,3 +45,7 @@ const sendOtpMail = async ({ otp, email }) => {
         `,
     });
 };
+
+module.exports = {
+    sendOtpMail,
+};
