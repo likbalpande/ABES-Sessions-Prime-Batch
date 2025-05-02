@@ -24,6 +24,8 @@ const sendMail = async ({ emails, subject, html }) => {
         console.log("Could not send email to", emails);
         console.log(err.message);
         console.log("----------------------------");
+
+        throw err;
     }
 };
 
